@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Phone } from "lucide-react";
 import { fadeUp, stagger } from "./motion";
 
 export default function Contact() {
@@ -30,6 +30,13 @@ export default function Contact() {
           >
             <Mail size={17} />
             harshits0421@gmail.com
+          </a>
+          <a
+            href="tel:+916386102762"
+            className="inline-flex items-center gap-2 rounded-full border border-cyan/42 px-6 py-3 font-mono text-sm font-bold text-cyan transition hover:-translate-y-0.5 hover:bg-cyan hover:text-void hover:shadow-glow"
+          >
+            <Phone size={17} />
+            +91 6386102762
           </a>
           <a
             href="https://github.com/harshitt2023"
