@@ -9,13 +9,15 @@ const projects = [
     name: "Pennywise",
     subtitle: "AI Powered Expense Tracker",
     stack: ["Next.js", "Gemini AI", "PostgreSQL"],
-    description: "AI-driven financial insights with smart reporting and expense analytics"
+    description: "AI-driven financial insights with smart reporting and expense analytics",
+    link: "https://pennywise3.vercel.app/sign-in?redirect_url=https%3A%2F%2Fpennywise3.vercel.app%2F"
   },
   {
     name: "MediNow",
     subtitle: "AI Health-tech Platform",
     stack: ["Next.js", "PostgreSQL", "Vonage API"],
-    description: "Telemedicine platform with video consultations and appointment booking"
+    description: "Telemedicine platform with video consultations and appointment booking",
+    link: "https://medinow-harshit.vercel.app/"
   }
 ];
 
@@ -66,7 +68,9 @@ export default function Projects() {
                     ))}
                   </div>
                   <a
-                    href="#contact"
+                    href={project.link}
+                    target="_blank"
+                    rel="noreferrer"
                     className="inline-flex items-center gap-2 rounded-full border border-cyan/42 px-5 py-2.5 font-mono text-sm text-cyan transition hover:bg-cyan hover:text-void hover:shadow-glow"
                   >
                     Live Demo <ExternalLink size={16} />
